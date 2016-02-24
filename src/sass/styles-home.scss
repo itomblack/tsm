@@ -1,0 +1,392 @@
+
+//===============================================================================
+// IMPORTS
+//===============================================================================
+// normalize.css v3.0.0 | MIT License | git.io/normalize
+@import "_normalize.scss";
+
+// define mixins & functions
+@import "_mixins.scss";
+
+// define variables
+@import "_variables.scss";
+
+//===============================================================================
+// MAIN ELEMENTS
+//===============================================================================
+
+html, body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  background-color: #FFF;
+  height: 100%;
+  min-height: 100%;
+  // overflow: hidden;
+  overflow-y: auto;
+  @include box-sizing;
+  @include clearfix;
+
+  // @media screen and (min-width: 850px) { overflow-x: scroll; }
+
+}
+
+header {
+	text-align: center;
+}
+
+div, img {
+	@include box-sizing;
+}
+
+ul, h1, h2, h3 {
+	margin: 0 0 0 0;
+}
+
+h1, h2, h3 {
+	float: left;
+	line-height: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	opacity: 1;
+}
+h1 {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 4em;
+	font-style: italic;
+	color: $yellow;
+	margin-top: -0.35em;
+
+	@media screen and (max-width: 500px){
+		// font-size: 2em;
+	}
+}
+
+h2 {
+	font-family: 'Oswald', helvetica, arial, sans-serif;
+	font-size: 2.5em;
+	color: $ink;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: 'Oswald', helvetica, arial, sans-serif;
+	font-size: 1.8em;
+	color: $midgrey;
+}
+
+h6 {
+	color: $yellow;
+	font-size: 0.875em;
+	font-weight: 300;
+	padding: 0;
+	line-height: 1em;
+	margin: 0;
+	font-family: 'Oswald', helvetica, arial, sans-serif;
+
+	a & {
+		&:hover {
+			color: $coral;
+		}
+	}
+}
+
+p {
+	color: $ink;
+	font-size: 1em;
+	line-height: 1.43em;
+	font-family: helvetica, arial, sans-serif;
+
+	a {
+		color: $coral;
+		text-decoration: none;
+		
+		transition: all $short ease;
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+
+
+//===============================================================================
+// STANDARD COLOURS: TEXT & BACKGROUND
+//===============================================================================
+
+.text-ink{ color: $ink; }
+.text-yellow{ color: $yellow; }
+.text-grey{ color: $grey; }
+.text-coral{ color: $coral; }
+
+//===============================================================================
+// STYLES
+//===============================================================================
+
+
+.header-band {
+	background-color: $yellow;
+	@include changeCol;
+	opacity: 1;
+	text-align: right;
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	z-index: 10;
+
+	.home-body & {
+		opacity: 0.5;
+	}
+
+	@media screen and (max-width: 480px) {
+		height: 40px;
+	}
+}
+
+.home-body {
+	background-color: $yellow;
+	@include changeCol;
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+
+.menu-button-text {
+	height: 30px;
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	opacity: 1;
+	transition: all $short ease;
+	cursor: pointer;
+
+	z-index: 15;
+
+	@media screen and (max-width: 480px) {
+		top: 10px;
+		height: 20px;
+	}
+}
+
+.menu-button-pseudos {
+	cursor: pointer;
+	position: fixed;
+	z-index:100;
+
+		&::before {
+			content: " ";
+			background-color: $ink;
+			width: 17px;
+			height: 4px;
+			position: fixed;
+			top: 15px;
+			right: 69px;
+
+			transition: all $short ease;
+		}
+		&::after {
+			content: " ";
+			background-color: $ink;
+			width: 17px;
+			height: 4px;
+			position: fixed;
+			top: 40px;
+			right: 69px;
+
+			transition: all $long ease;
+		}
+
+		@media screen and (max-width: 480px) {
+			&::before {
+				width: 12px;
+				height: 3px;
+				top: 10px;
+				right: 52px;
+			}
+			&::after {
+				width: 12px;
+				height: 3px;
+				top: 27px;
+				right: 52px;
+			}
+		}
+	}
+
+.menu-panel {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: $ink;
+	opacity: 0.9;
+	left: 150%;
+	padding-top: 3em;
+	z-index: 10;
+
+	transition: all $long ease;
+
+	ul li {
+		width: 100%;
+		text-align: center;
+		height: 3em;
+		padding-top: 1em;
+		transition: all $short ease;
+
+		&:hover {
+			background-color: $coral;
+		}
+
+		@media screen and (max-width: 480px) {
+			height: 2.3em;
+			padding-top: 0.4em;
+		}
+	}
+
+	a {
+		font-family: 'Oswald', helvetica, arial, sans-serif;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: white;
+
+	}
+}
+
+input[type=checkbox]:checked ~ .menu-button-text {
+  opacity: 0;
+}
+	
+input[type=checkbox]:checked ~ .menu-button-pseudos{
+
+	&::before {
+		transform: rotate(45deg);
+		top: 24px;
+		right: 29px;
+		background-color: $coral;
+	}
+	&::after {
+		transform: rotate(135deg);
+		top: 34px;
+		right: 29px;
+		background-color: $coral;
+	}
+
+	@media screen and (max-width: 480px) {
+		&::before {
+			top: 16px;
+		}
+		&::after {
+			top: 23px;
+		}
+	}
+}
+
+input[type=checkbox]:checked ~ .menu-panel{
+		transform: translate(-150%, 0);	
+}
+
+[class*="home-ill"] {
+  width: 100%;
+  height: 300px;
+  float: left;
+
+  svg {
+  	max-height: 100%;
+  }
+
+  #shadow, #face {
+  	transform: translate(0,0);
+  	transition: transform $long ease;
+  }
+
+  &:hover {
+
+  // 	path {
+		// 	animation: heartBeat 3s infinite;
+		// }
+
+		& #shadow, #face {
+			transform: translate(6px, 6px);
+		}
+  }
+
+	@media screen and (min-width: 480px) {
+		width: 50%;
+		padding: 10px 20px;
+	}
+
+	@media screen and (min-width: 750px) {
+		width: 33.33%;
+	}
+
+}
+
+.home-ill-1 {
+	 padding: 0 0px 30px 0px;
+}
+
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 4s forwards;
+}
+
+.footer-bar {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	height: 40px;
+	padding: 0.8em 1.3em 0 1.3em;
+	background-color: $ink;
+
+	a {
+		text-decoration: none;
+		&:first-child {
+			float: left;
+		}
+		&:last-child {
+			float: right;
+		}
+	}
+
+	@media screen and (max-width: 400px) {
+		display: none;
+	}
+}
+
+
+
+
+//===============================================================================
+// ANIMATIONS
+//===============================================================================
+
+
+@keyframes changeCol{
+	0% { background-color: $yellow; }
+	50% { background-color: $coral; }
+	100% { background-color: $yellow; }
+}
+
+@keyframes heartBeat {
+  0% { stroke: $ink;}
+  50% { stroke: $coral; }
+  100% { stroke: $ink;}
+}
+
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+
+
+
+
