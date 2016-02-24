@@ -39,3 +39,5 @@ Icon
 
 # Don't commit css
 *.css
+
+/dist/*
