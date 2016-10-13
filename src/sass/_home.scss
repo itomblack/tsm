@@ -29,23 +29,29 @@ $marg2: 13px;
 
 //breakpoints
 $break1: 750px;
-$break2: 710px;
-$break3: 610px;
-$break4: 350px;
+$break2: 550px;
+$break3: 420px;
+// $break3: 610px;
+// $break4: 350px;
+
+@media screen and (max-width: $break2) { 
+ $marg: 13px;
+}
 
 body, html {
 	font-family: 'Akkurat Std', Arial, serif;
 	font-size: 13px;
 	color: $ink;
-
-	@media screen and (max-width: $break4) { font-size: 11px; }
+	
+	@media screen and (max-width: $break1) { font-size: 12px; }
+	@media screen and (max-width: $break2) { font-size: 11px; }
 
 
 }
 
 body {
 	padding: 24px;
-	 @media screen and (max-width: $break2) { padding: 24px 10px; }
+	 @media screen and (max-width: $break2) { padding: 24px 0px; }
 }
 
 h1 {
@@ -57,7 +63,7 @@ h1 {
 }
 
 h2 {
- font-size: 1.5em;
+ font-size: 1.3em;
  line-height: 1em;
 }
 
@@ -88,8 +94,6 @@ p {
 	font-size: 1.1em;
 	margin-top: 1em;
 	cursor: pointer;
-	
-	@media screen and (max-width: $break3) { padding: 8px 4px; }
 }
 
 
@@ -110,48 +114,58 @@ p {
 	left: 35.8%;
 	bottom: $marg;
 	width: calc(33% - 32px);
-	border: 1px solid $orange1;
 	color: $orange1;
 
-	@media screen and (max-width: $break3) { 
-		bottom: $marg2;
-		left: $marg2;
-		width: calc(50% - 25px);
-		&:hover {
-			border: 1px solid $blue;
-			color: $blue;
-		}
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: left;
+
+	&::after {
+		content:"";
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border: 3px solid;
+		border-top: none;
+		border-left: none;
+		border-color: $orange1;
+		margin-left: 8px;
+		transform: rotate(45deg);
+		position: relative;
+		top: -3px;
+		transition: top $short ease;
+
 	}
-	@media screen and (min-width: $break3) { 
-		border: none;
-		padding-left: 0;
-		padding-right: 0;
-		text-align: left;
 
+	&:hover {
+		color: $blue;
 		&::after {
-			content:"";
-			display: inline-block;
-			width: 12px;
-			height: 12px;
-			border: 3px solid;
-			border-top: none;
-			border-left: none;
-			border-color: $orange1;
-			margin-left: 8px;
-			transform: rotate(45deg);
-			position: relative;
-			top: -3px;
-			transition: top $short ease;
+			border-color: $blue;
+			top: 0px;
+		 }
+	}
+}
 
-		}
+.btn-compare-mob {
+	
+	@media screen and (min-width: $break1) { display: none; }
 
-		&:hover {
-			color: $blue;
-			&::after {
-				border-color: $blue;
-				top: 0px;
-			 }
-		}
+	position: absolute;
+	color: $orange1;
+	border: 1px solid $orange1;
+	padding: 6px;
+    width: calc( 100% - 2em);
+    margin: 0 1em;
+    bottom: 1em;
+
+    &:hover {
+		color: $blue;
+		border: 1px solid $blue;
+	}
+
+	@media screen and (max-width: $break2) { 
+		span { display: none; }
 	}
 }
 
@@ -159,13 +173,14 @@ p {
 	width: 100%;
 	max-width: 800px;
 	min-width: 320px;
-	height: 260px;
-	margin: 24px auto;
+	height: 270px;
+	margin: 16px auto;
 	background: white;
 	box-shadow: 0 2px 4px rgba(0,0,0,.3);
 
 	position: relative;
 	@media screen and (max-width: $break1) { height: 230px;}
+	@media screen and (max-width: $break2) { height: 215px;}
 	// @media screen and (max-width: $break3) { height: 199px;}
 	// @media screen and (max-width: $break4) { height: 190px;}
 }
@@ -182,20 +197,10 @@ p {
 
 	@media screen and (max-width: $break1) { 
 		height: 50%;
-		max-width: 200px;
+		width: 33%;
 	}
-	
-	// @media screen and (max-width: $break3) { 
-	// 	left: $marg2;
-	//     top: $marg2;
-	//     // height: 170px;
-	//     height: 125px;
-	//     width: calc(34% - 13px);
-	// }
-	// @media screen and (max-width: $break4) {
-	// 	height: 118px;
-	// 	width: 118px;
-	// }
+
+	@media screen and (max-width: $break2) { height: 45%; }
 }
 
 
@@ -206,14 +211,16 @@ p {
     position: absolute;
     bottom: $marg;
 	transition: all .1 ease;
+
     &:hover {
     	background-color: rgba($blue,.5);
     }
-
-    @media screen and (max-width: $break3) {
-    	bottom: 0;
-    	background-color: rgba($ink, 0);
-    };
+	
+	@media screen and (max-width: $break1) {
+		background-color: rgba($ink, 0);
+		height: 40px;
+		bottom: 0;
+	}
 }
 
 
@@ -233,77 +240,94 @@ p {
 		top: 1.2em;
 
 	}
-
-	@media screen and (max-width: $break1) {
-		width: 49px;
-		span { display: none; }
-	}
-
-	@media screen and (max-width: $break3) { display: none; }
 }
 
 .email-icon, .heart-icon {
 	width: 48px;
 
 	img { position: absolute; }
+
+	@media screen and (max-width: $break1) {
+		// width: 30px;
+	}
 }
 
 .email-icon {
 	right: 64px;
+
 	img {
 		left: 1em;
 		top: 1.1em;	
 	}
-	@media screen and (max-width: $break3) { left: 0 };
+
+	@media screen and (max-width: $break1) {
+		left: 0;	
+	};
+	
 }
 
 .heart-icon {
 	right: $marg;
+
 	img {
 		right: 1em;
-		top: .9em;	
+		top: .9em;
 	}
-	 @media screen and (max-width: $break3) { right: 0 };
+
+	@media screen and (max-width: $break1) {
+		right: 0;	
+	};
+	
 }
 
-.hotel-col-wrap {
+.hotel-col-wrap, .compare-col-wrap {
 	position: absolute;
 	display: inline-block;
 	left: 34%;
 	width: 33%;
-	top: 1em;
-	padding: 0 $marg;
-	height: calc(100% - 2em);
 	border-right: 1px solid $vlgrey;
+}
 
-	@media screen and (max-width: $break3) { 
-		left: 34%;
-		width: 66%;
-		padding: 0 $marg2;
+.hotel-col-wrap {
+	top: 0;
+	padding: $marg $marg 0 $marg;
+	border-bottom: 1px solid $vlgrey;
+	// height: calc(100% - 2em);
+	@media screen and (max-width: $break1) { 
+		width: 67%;
+		left: 33%;
+		height: 50%;
 		border-right: none;
 	}
-	@media screen and (max-width: $break4) {
-		left: 128px;
-		width: calc(100% - 128px);
+
+	@media screen and (max-width: $break2) { height: 45%; }
+}
+
+.compare-col-wrap {
+	top: 110px;
+	height: 160px;
+	
+	@media screen and (max-width: $break1) { 
+		left: 0;
+		top: 50%;
+		height: 50%;
 	}
+
+	@media screen and (max-width: $break2) {
+		top: 45%;
+		height: 55%;
+	}
+
 }
 
 .title-review-wrap {
 	h2 {
-		display: inline-block;
-		margin: 0 8px 0 0;
+		margin: 0 8px 6px 0;
 	}
-	
-	img {
-		@media screen and (max-width: $break3) { 
-			display: block;
-			margin-top: 4px;
-		}
-	}	
 }
 
 .stars {
-	@media screen and (max-width: $break4) { 
+	@media screen and (max-width: $break2) { 
 		height: 9px;
 	}
 }
@@ -322,13 +346,12 @@ p {
 		 margin: 1px 0 0 19px;
 	}
 
-	@media screen and (max-width: $break3) { display: none; }
+	@media screen and (max-width: $break2) { display: none; }
 }
 
 .review-wrap {
 	margin-top: 8px;
 	position: relative;
-	border-bottom: 1px solid $vlgrey;
 
 	img {
 		position: absolute;
@@ -342,31 +365,31 @@ p {
 	p {
 		display: inline-block;
 		margin: 0;
-		@media screen and (max-width: $break1) { display: none; }
-	}
-
-	@media screen and (max-width: $break4) { 
-		img {
-			top: -3px;
-		}
+		@media screen and (max-width: $break2) { display: none; }
 	}
 }
 
 .deals-wrap {
 	position: absolute;
 	display: inline-block;
-	bottom: 60px;
+	top: 2.1em;
 	left: $marg;
 
-	@media screen and (max-width: $break3) { display: none; }
+	@media screen and (max-width: $break1) { 
+		top: .5em;
+	}
 }
 
 .deal-row {
-	margin-top: 6px;
+	margin-top: 0.3em;
 	
-	h4, p {
+	p {
 		display: inline-block;
 		margin: 0;
+	}
+
+	@media screen and (max-width: $break2) { 
+		p { display: block; }
 	}
 }
 
@@ -380,15 +403,15 @@ p {
 	height: calc(100% - 2em);
 	padding: 0 $marg;
 
-	@media screen and (max-width: $break3) { 
-		left: 34%;
-		padding: 0 $marg2;
-		width: 66%;
-		bottom: 0;
+	@media screen and (max-width: $break1) { 
+		left: 33%;
+		top: 50%;
+		width: 67%;
 	}
-	@media screen and (max-width: $break4) {
-		left: 128px;
-		width: calc(100% - 128px);
+
+	@media screen and (max-width: $break2) {
+		top: 45%;
+		height: 55%;
 	}
 }
 
@@ -401,24 +424,30 @@ p {
 			position: relative;
 			left: -4px;
 		}
-		@media screen and (max-width: $break3) { margin: 0 0 2px 4px; };
+	}
+
+	@media screen and (max-width: $break1) {
+		margin: 0;
+		display: inline-block;
+	}
+
+	@media screen and (max-width: $break2) {
+		li { margin: 0 0 7px 4px; }
 	}
 }
 
-.mobile-only { display: none; }
-
-@media screen and (max-width: $break3) { 
-	.non-mobile { display: none; }
-	.mobile-only { display: block; }
-}
-
 .deal-info-wrap {
-	@media screen and (max-width: $break3) { 
-		img { display: none; }
-		margin-top: 75px;
+
+	@media screen and (max-width: $break1) {
 		width: 50%;
 		display: inline-block;
+		margin-top: 10px;
 		border-right: 1px solid $vlgrey;
+	}
+
+	@media screen and (max-width: $break3) {
+		border-right: none;
+		width: 60%
 	}
 }
 
@@ -426,17 +455,23 @@ p {
 	position: absolute;
 	width: 100%;
 	bottom: 60px;
+
+	@media screen and (max-width: $break1) {
+		margin: 1em 0 0 0;
+		width: 50%;
+		display: inline-block;
+		top: 0;
+		padding-left: 1em;
+	}
+
 	@media screen and (max-width: $break3) {
-		width: calc(50% - 18px);
-		position: absolute;
-		bottom: 43px;
-		right: 8px;
+		width: 40%
 	}
 }
 
 .cost-total {
 	display: inline-block;
-	@media screen and (max-width: $break1) { display: none; }
+	@media screen and (max-width: $break2) { display: none; }
 }
 
 .btn-deal {
@@ -445,20 +480,29 @@ p {
     left: 69%;
     width: calc(33% - 32px);
     bottom: $marg;
-
-	@media screen and (max-width: $break3) {
-		position: absolute; 
-		bottom: $marg2;
-		left: 50%;
-		width: calc(50% - 13px);
-
+	
+	@media screen and (max-width: $break1) {
+	    left: calc(33% + 1em);
+	    width: calc(67% - 2em);
+	    bottom: 1em;
+	    padding: 6px;
 	}
 }
 
 .strikethrough { text-decoration: line-through; }
 
-
 .inline-b { display: inline-block;}
 
+.mobile-only { display: none; }
+
+@media screen and (max-width: $break1) { 
+	.non-mobile { display: none; }
+	.mobile-only { display: block; }
+}
+
+@media screen and (max-width: $break2) { 
+	.hide-2 { display: none; }
+	.mobile-marg { margin-top: 7px; }
+}
 
 
