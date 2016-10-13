@@ -28,7 +28,7 @@ $marg: 16px;
 $marg2: 13px;
 
 //breakpoints
-$break1: 750px;
+$break1: 780px;
 $break2: 710px;
 $break3: 610px;
 $break4: 350px;
@@ -165,9 +165,9 @@ p {
 	box-shadow: 0 2px 4px rgba(0,0,0,.3);
 
 	position: relative;
-	@media screen and (max-width: $break1) { height: 230px;}
-	// @media screen and (max-width: $break3) { height: 199px;}
-	// @media screen and (max-width: $break4) { height: 190px;}
+
+	@media screen and (max-width: $break3) { height: 199px;}
+	@media screen and (max-width: $break4) { height: 190px;}
 }
 
 .img-col-wrap {
@@ -179,23 +179,18 @@ p {
 	bottom: 0;
 	background: url("../img/photo.png") no-repeat center center;
 	background-size: cover;
-
-	@media screen and (max-width: $break1) { 
-		height: 50%;
-		max-width: 200px;
-	}
 	
-	// @media screen and (max-width: $break3) { 
-	// 	left: $marg2;
-	//     top: $marg2;
-	//     // height: 170px;
-	//     height: 125px;
-	//     width: calc(34% - 13px);
-	// }
-	// @media screen and (max-width: $break4) {
-	// 	height: 118px;
-	// 	width: 118px;
-	// }
+	@media screen and (max-width: $break3) { 
+		left: $marg2;
+	    top: $marg2;
+	    // height: 170px;
+	    height: 125px;
+	    width: calc(34% - 13px);
+	}
+	@media screen and (max-width: $break4) {
+		height: 118px;
+		width: 118px;
+	}
 }
 
 
@@ -393,7 +388,7 @@ p {
 }
 
 .deal-items-list {
-	margin: 21px 0 0 0;
+	margin: 0 0 21px 0;
 	li {
 		margin: 0 0 4px 4px;
 		&::before {
