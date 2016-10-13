@@ -369,7 +369,7 @@ p {
 		&:hover { color: $orange1; }
 	}
 
-	@media screen and (max-width: $break2) { display: none; }
+	@media screen and (max-width: $break2) { margin-top: 4px; }
 }
 
 .review-wrap {
@@ -388,7 +388,11 @@ p {
 	p {
 		display: inline-block;
 		margin: 0;
-		@media screen and (max-width: $break2) { display: none; }
+	}
+
+	@media screen and (max-width: $break2) { 
+		img { top: 1px; }
+		p { display: none;}
 	}
 }
 
