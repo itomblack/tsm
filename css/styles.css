@@ -1,0 +1,678 @@
+/* line 5, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 12, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+
+body {
+  margin: 0; }
+
+  .test {
+    display: none;
+  }
+
+/* line 31, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/* line 40, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/* line 47, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* line 55, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+[hidden], template {
+  display: none; }
+
+/* line 63, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+a {
+  background: transparent; }
+
+/* line 69, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+a:active, a:hover {
+  outline: 0; }
+
+/* line 77, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/* line 83, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+b, strong {
+  font-weight: bold; }
+
+/* line 88, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/* line 93, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* line 99, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/* line 105, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/* line 111, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 118, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 122, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 130, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+img {
+  border: 0; }
+
+/* line 135, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* line 143, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/* line 148, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/* line 155, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+pre {
+  overflow: auto; }
+
+/* line 163, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* line 182, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+/* line 189, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button {
+  overflow: visible; }
+
+/* line 198, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button, select {
+  text-transform: none; }
+
+/* line 208, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/* line 215, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/* line 221, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/* line 228, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+input {
+  line-height: normal; }
+
+/* line 238, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+/* line 247, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/* line 253, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 263, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/* line 268, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/* line 276, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0; }
+
+/* line 282, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/* line 288, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+optgroup {
+  font-weight: bold; }
+
+/* line 296, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 302, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
+td, th {
+  padding: 0; }
+
+/* line 7, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+*, *::before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 13, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+ul {
+  padding: 0;
+  list-style: none; }
+
+/* line 19, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+body {
+  background-color: #CACCD9; }
+
+@media screen and (max-width: 550px) { }
+
+/* line 41, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+body, html {
+  font-family: 'Akkurat Std', Arial, serif;
+  font-size: 13px;
+  color: #201D31; }
+  @media screen and (max-width: 750px) {
+    body, html {
+      font-size: 12px; } }
+  @media screen and (max-width: 550px) {
+    body, html {
+      font-size: 11px; } }
+
+/* line 52, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+body {
+  padding: 24px; }
+  @media screen and (max-width: 550px) {
+    body {
+      padding: 24px 0px; } }
+
+/* line 57, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+h1 {
+  font-size: 2.2em;
+  line-height: 1em;
+  margin: 0; }
+  @media screen and (max-width: 750px) {
+    h1 {
+      font-size: 2em; } }
+
+/* line 65, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+h2 {
+  font-size: 1.3em;
+  line-height: 1em; }
+
+/* line 70, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+h3 {
+  font-size: 1.3em;
+  line-height: 1em; }
+
+/* line 75, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+h4 {
+  font-size: 1.2em;
+  line-height: 1em; }
+
+/* line 80, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+p {
+  font-size: 1em;
+  margin: 0; }
+
+/* line 85, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.orange {
+  color: #EE6000; }
+
+/* line 86, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.orange2 {
+  color: #FA9550; }
+
+/* line 87, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.lighter {
+  color: #5E5A6C; }
+
+/* line 90, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.btn, .btn-2 {
+  padding: 14px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 1em;
+  cursor: pointer; }
+
+/* line 100, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.btn {
+  background-color: #EE6000;
+  border: 1px solid #EE6000;
+  color: white;
+  width: 100%;
+  font-weight: bold; }
+  /* line 106, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .btn:hover {
+    background-color: #27A3D9;
+    border: 1px solid #27A3D9; }
+
+/* line 112, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.btn-compare {
+  position: absolute;
+  left: 35.8%;
+  bottom: 13px;
+  width: -webkit-calc(33% - 32px);
+  width: calc(33% - 32px);
+  color: #EE6000;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left; }
+  /* line 124, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .btn-compare::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 3px solid;
+    border-top: none;
+    border-left: none;
+    border-color: #EE6000;
+    margin-left: 8px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: relative;
+    top: -3px;
+    -webkit-transition: top 0.3s ease;
+    transition: top 0.3s ease; }
+  /* line 141, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .btn-compare:hover {
+    color: #27A3D9; }
+    /* line 143, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .btn-compare:hover::after {
+      border-color: #27A3D9;
+      top: 0px; }
+
+/* line 150, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.btn-compare-mob {
+  position: absolute;
+  color: #EE6000;
+  border: 1px solid #EE6000;
+  padding: 6px;
+  width: -webkit-calc( 100% - 2em);
+  width: calc( 100% - 2em);
+  margin: 0 1em;
+  bottom: 1em; }
+  @media screen and (min-width: 750px) {
+    .btn-compare-mob {
+      display: none; } }
+  /* line 162, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .btn-compare-mob:hover {
+    color: #27A3D9;
+    border: 1px solid #27A3D9; }
+  @media screen and (max-width: 550px) {
+    /* line 168, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .btn-compare-mob span {
+      display: none; } }
+
+/* line 172, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.card-wrap {
+  width: 100%;
+  max-width: 800px;
+  min-width: 320px;
+  height: 270px;
+  margin: 16px auto;
+  background: white;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative; }
+  @media screen and (max-width: 750px) {
+    .card-wrap {
+      height: 230px; } }
+  @media screen and (max-width: 550px) {
+    .card-wrap {
+      height: 215px; } }
+
+/* line 188, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.img-col-wrap {
+  width: 34%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  background: url("../img/photo.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  @media screen and (max-width: 750px) {
+    .img-col-wrap {
+      height: 50%;
+      width: 33%; } }
+  @media screen and (max-width: 550px) {
+    .img-col-wrap {
+      height: 45%; } }
+
+/* line 207, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.photos-link-wrap, .email-icon, .heart-icon {
+  background-color: rgba(32, 29, 49, 0.5);
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  bottom: 13px;
+  -webkit-transition: all 0.1 ease;
+  transition: all 0.1 ease; }
+  /* line 215, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .photos-link-wrap:hover, .email-icon:hover, .heart-icon:hover {
+    background-color: rgba(39, 163, 217, 0.5); }
+  @media screen and (max-width: 750px) {
+    .photos-link-wrap, .email-icon, .heart-icon {
+      background-color: rgba(32, 29, 49, 0);
+      height: 40px;
+      bottom: 0; } }
+
+/* line 227, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.photos-link-wrap {
+  left: 13px;
+  width: 78px; }
+  /* line 231, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .photos-link-wrap img {
+    position: absolute;
+    left: 1em;
+    top: 1.1em; }
+  /* line 236, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .photos-link-wrap span {
+    position: absolute;
+    color: white;
+    left: 45px;
+    top: 1.2em; }
+
+/* line 245, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.email-icon, .heart-icon {
+  width: 48px; }
+  /* line 248, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .email-icon img, .heart-icon img {
+    position: absolute; }
+  @media screen and (max-width: 750px) { }
+
+/* line 255, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.email-icon {
+  right: 64px; }
+  /* line 258, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .email-icon img {
+    left: 1em;
+    top: 1.1em; }
+  @media screen and (max-width: 750px) {
+    .email-icon {
+      left: 0; } }
+
+/* line 269, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.heart-icon {
+  right: 13px; }
+  /* line 272, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .heart-icon img {
+    right: 1em;
+    top: 0.9em; }
+  @media screen and (max-width: 750px) {
+    .heart-icon {
+      right: 0; } }
+
+/* line 283, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.hotel-col-wrap, .compare-col-wrap {
+  position: absolute;
+  display: inline-block;
+  left: 34%;
+  width: 33%;
+  border-right: 1px solid #F2F2F2; }
+
+/* line 291, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.hotel-col-wrap {
+  top: 0;
+  padding: 13px 13px 0 13px;
+  border-bottom: 1px solid #F2F2F2; }
+  @media screen and (max-width: 750px) {
+    .hotel-col-wrap {
+      width: 67%;
+      left: 33%;
+      height: 50%;
+      border-right: none; } }
+  @media screen and (max-width: 550px) {
+    .hotel-col-wrap {
+      height: 45%; } }
+
+/* line 306, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.compare-col-wrap {
+  top: 110px;
+  height: 160px; }
+  @media screen and (max-width: 750px) {
+    .compare-col-wrap {
+      left: 0;
+      top: 50%;
+      height: 50%; } }
+  @media screen and (max-width: 550px) {
+    .compare-col-wrap {
+      top: 45%;
+      height: 55%; } }
+
+/* line 324, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.title-review-wrap h2 {
+  margin: 0 8px 6px 0; }
+
+@media screen and (max-width: 550px) {
+  .stars {
+    height: 9px; } }
+
+/* line 335, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.location-wrap {
+  margin-top: 8px;
+  position: relative; }
+  /* line 339, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .location-wrap img {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  /* line 344, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .location-wrap p {
+    display: inline-block;
+    margin: 1px 0 0 19px; }
+  @media screen and (max-width: 550px) {
+    .location-wrap {
+      display: none; } }
+
+/* line 352, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.review-wrap {
+  margin-top: 8px;
+  position: relative; }
+  /* line 356, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .review-wrap img {
+    position: absolute;
+    left: 0;
+    top: 3px; }
+  /* line 361, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .review-wrap h4 {
+    display: inline-block;
+    margin: 1px 0 12px 20px; }
+  /* line 365, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .review-wrap p {
+    display: inline-block;
+    margin: 0; }
+    @media screen and (max-width: 550px) {
+      .review-wrap p {
+        display: none; } }
+
+/* line 372, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.deals-wrap {
+  position: absolute;
+  display: inline-block;
+  top: 2.1em;
+  left: 13px; }
+  @media screen and (max-width: 750px) {
+    .deals-wrap {
+      top: 0.5em; } }
+
+/* line 383, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.deal-row {
+  margin-top: 0.3em; }
+  /* line 386, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .deal-row p {
+    display: inline-block;
+    margin: 0; }
+  @media screen and (max-width: 550px) {
+    /* line 392, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .deal-row p {
+      display: block; } }
+
+/* line 397, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.deal-col-wrap {
+  position: absolute;
+  display: inline-block;
+  left: 67%;
+  width: 33%;
+  top: 1em;
+  height: -webkit-calc(100% - 2em);
+  height: calc(100% - 2em);
+  padding: 0 13px; }
+  @media screen and (max-width: 750px) {
+    .deal-col-wrap {
+      left: 33%;
+      top: 50%;
+      width: 67%; } }
+  @media screen and (max-width: 550px) {
+    .deal-col-wrap {
+      top: 45%;
+      height: 55%; } }
+
+/* line 418, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.deal-items-list {
+  margin: 21px 0 0 0; }
+  /* line 420, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .deal-items-list li {
+    margin: 0 0 4px 4px; }
+    /* line 422, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .deal-items-list li::before {
+      content: "•";
+      position: relative;
+      left: -4px; }
+  @media screen and (max-width: 750px) {
+    .deal-items-list {
+      margin: 0;
+      display: inline-block; } }
+  @media screen and (max-width: 550px) {
+    /* line 435, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .deal-items-list li {
+      margin: 0 0 7px 4px; } }
+
+@media screen and (max-width: 750px) {
+  .deal-info-wrap {
+    width: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    border-right: 1px solid #F2F2F2; } }
+@media screen and (max-width: 420px) {
+  .deal-info-wrap {
+    border-right: none;
+    width: 60%; } }
+
+/* line 454, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.book-wrap {
+  position: absolute;
+  width: 100%;
+  bottom: 60px; }
+  @media screen and (max-width: 750px) {
+    .book-wrap {
+      margin: 1em 0 0 0;
+      width: 50%;
+      display: inline-block;
+      top: 0;
+      padding-left: 1em; } }
+  @media screen and (max-width: 420px) {
+    .book-wrap {
+      width: 40%; } }
+
+/* line 472, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.cost-total {
+  display: inline-block; }
+  @media screen and (max-width: 550px) {
+    .cost-total {
+      display: none; } }
+
+/* line 477, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.btn-deal {
+  position: absolute;
+  left: 69%;
+  width: -webkit-calc(33% - 32px);
+  width: calc(33% - 32px);
+  bottom: 13px; }
+  @media screen and (max-width: 750px) {
+    .btn-deal {
+      left: -webkit-calc(33% + 1em);
+      left: calc(33% + 1em);
+      width: -webkit-calc(67% - 2em);
+      width: calc(67% - 2em);
+      bottom: 1em;
+      padding: 6px; } }
+
+/* line 492, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.strikethrough {
+  text-decoration: line-through; }
+
+/* line 494, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.inline-b {
+  display: inline-block; }
+
+/* line 496, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.mobile-only {
+  display: none; }
+
+@media screen and (max-width: 750px) {
+  /* line 499, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .non-mobile {
+    display: none; }
+  /* line 500, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .mobile-only {
+    display: block; } }
+
+@media screen and (max-width: 550px) {
+  /* line 504, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .hide-2 {
+    display: none; }
+  /* line 505, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .mobile-marg {
+    margin-top: 7px; } }
