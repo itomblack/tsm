@@ -5,13 +5,8 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 /* line 12, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
-
 body {
   margin: 0; }
-
-  .test {
-    display: none;
-  }
 
 /* line 31, /Users/ianblack/Repos/tsm/src/sass/_normalize.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
@@ -437,7 +432,7 @@ p {
   right: 64px; }
   /* line 258, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .email-icon img {
-    left: 1em;
+    left: 0.9em;
     top: 1.1em; }
   @media screen and (max-width: 750px) {
     .email-icon {
