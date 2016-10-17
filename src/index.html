@@ -5,17 +5,24 @@
   <title></title> <!-- ADD A TITLE! -->
 </head>
 <body>
+<div class="mobile">
+	@@include('./inc/des-chart.html')
+	
+	<div class="tooltip-drag">
+		<div id="tooltip-drag" class="js-hide">
+			<p>From</p>
+			<p class="bigger">£9999</p>
+		</div>
+	</div>
+	
+</div> 
 
-@@include('./inc/card.html')
-@@include('./inc/card.html')
-@@include('./inc/card.html')
-@@include('./inc/card.html')
-@@include('./inc/card.html')
-@@include('./inc/card.html')
+
 
 	
 
   <script src="js/vendor/jquery-2.1.1.min.js"></script>
+  <script src="js/vendor/jquery-ui.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
