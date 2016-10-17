@@ -3,9 +3,11 @@ body {  background-color: black;}
 .mobile {
 	background-color: white;
 	max-width: 320px;
+	height: 568px;
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	overflow: auto;
 }
 
 .tooltip-drag {
@@ -99,8 +101,32 @@ body {  background-color: black;}
 			tspan { fill: white !important; }
 		}
  	}
-
  }
+
+[id^="graph-"]{
+	&.js-highlighted {
+
+		[id^="graph-back"] { fill: $blue2 !important; }
+	 	[id^="graph-back"] { fill: $blue2 !important; }
+	 	[id^="graph-bar"] { fill: $blue2 !important; }
+
+	 	text { 
+	 		fill: $blue2 !important;
+	 		font-weight: bold;
+	 		tspan { fill: $blue2 !important; }
+	 	}
+
+	 	[id^="cheapest-tooltip"] {
+			text { 
+				fill: white !important;
+				font-weight: normal;
+				tspan { fill: white !important; }
+			}
+	 	}
+	}	
+} 
+
+#card-loading {transition: all $short ease}
 
 
 .red { fill: red !important; }
