@@ -11,7 +11,9 @@ var            gulp = require( 'gulp' ),
             stylish = require( 'jshint-stylish' ),
             rimraf = require( 'rimraf' ),
             gulpSequence = require('gulp-sequence'),
-            fileinclude = require('gulp-file-include');
+            fileinclude = require('gulp-file-include'),
+            handlebars = require('gulp-compile-handlebars'),
+            rename = require('gulp-rename');
 
 // paths & files
 var path = {
@@ -26,6 +28,7 @@ var path = {
         img: 'src/img/**/*.*',
         destImg: 'dist/img/',
         dest: 'dist/',
+        handlebarsInc: 'src/inc-handlebars/card-handle.html',
 };
 
 // ports
@@ -104,7 +107,25 @@ gulp.task( 'sass', function() {
     .pipe( gulp.dest( path.destCss ) );
 });
 
+//handlebars
+
+if (require('./src/data/card-data.json')) {
+    gulp.task('handlebars', function() {
+      var tsmData = require('./src/data/card-data.json');
+        for(var i=0; i<tsmData.length; i++) {
+            var thisData = tsmData[i],
+                fileName = thisData.cardNum;
+
+            gulp.src([path.handlebarsInc])
+                .pipe(handlebars(thisData))
+                .pipe(rename(fileName + ".html"))
+                .pipe(gulp.dest('src/build/'));
+        }
+    });
+}
+
+
 // default task
 gulp.task( 'default', function(cb){
-  gulpSequence(['clean'], ['img'],  ['js', 'sass'], ['html'], ['server', 'watch'] )(cb);
+  gulpSequence(['clean'], ['handlebars'], ['img'],  ['js', 'sass'], ['html'], ['server', 'watch'] )(cb);
 });

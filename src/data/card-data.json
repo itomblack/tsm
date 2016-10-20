@@ -1,0 +1,30 @@
+[{  
+    "cardNum": "1",
+    "hotelName": "Interpalace by Blue Sea",
+    "price": "£375",
+    "otherPrice1": "£380",
+    "review": "76%",
+    "dealLine1": "Bed & Breakfast",
+    "dealLine2": "Double Room",
+    "dealLine3": "LGW - Direct"
+},
+{
+    "cardNum": "2",
+    "hotelName": "Iberostar Grand Hotel",
+    "price": "£675",
+    "otherPrice1": "£680",
+    "review": "72%",
+    "dealLine1": "Room Only",
+    "dealLine2": "King Room",
+    "dealLine3": "LHR - Direct"
+},
+{   
+    "cardNum": "3",
+    "hotelName": "Red Level at Gran Melia Palacio de Isora",
+    "price": "£1125",
+    "otherPrice1": "£1170",
+    "review": "81%",
+    "dealLine1": "All-inclusive",
+    "dealLine2": "Twin Room",
+    "dealLine3": "LUT - Direct"
+}]
