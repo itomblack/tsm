@@ -1,3 +1,56 @@
 //===============================================================================
 // FONTS
 //===============================================================================
+@font-face {
+    font-family: 'AkkuratRegular';
+    src: url('/fonts/akkurat/lineto-akkurat-regular.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-regular.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-regular.svg#AkkuratRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratItalic';
+    src: url('/fonts/akkurat/lineto-akkurat-italic.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-italic.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-italic.svg#AkkuratItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratBold';
+    src: url('/fonts/akkurat/lineto-akkurat-bold.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-bold.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-bold.svg#AkkuratBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratBoldItalic';
+    src: url('/fonts/akkurat/lineto-akkurat-bolditalic.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-bolditalic.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-bolditalic.svg#AkkuratBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLight';
+    src: url('/fonts/akkurat/lineto-akkurat-light.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-light.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-light.svg#AkkuratLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AkkuratLightItalic';
+    src: url('/fonts/akkurat/lineto-akkurat-lightitalic.eot');
+    src: url('/fonts/akkurat/lineto-akkurat-lightitalic.woff') format('woff'),
+         url('/fonts/akkurat/lineto-akkurat-lightitalic.svg#AkkuratLightItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
