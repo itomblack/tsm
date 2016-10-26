@@ -1,0 +1,61 @@
+
+.des-title { margin-bottom: 0; }
+
+.des-all-wrap {
+	// background-color: white;
+	height: 125px;
+	margin-bottom: 1em;
+	display: flex;
+}
+
+.day-item-wrap {
+	width: calc(100% / 7.1);
+	// display: inline-block;
+	flex-grow: 1;
+	text-align: center;
+	margin: 0 5px;
+	position: relative;
+	&:first-of-type { margin-left: 0; }
+	&:nth-of-type(7) { margin-right: 0; }
+
+	&:hover {
+		.day-item-bar { background-color: $blue; }
+		.day-item-axis { background-color: white; }
+	}
+}
+
+.day-item-bar {
+	font-weight: 600;
+	font-size: 1.3em;
+	background-color: $grey;
+	color: white;
+	position: absolute;
+	bottom: 45px;
+	width: 100%;
+	min-height: 24px;
+
+	p { 
+		position: absolute;
+		bottom: 2px;
+		width: 100%;
+	}	
+}
+
+.day-item-axis {
+	font-weight: 300;
+	font-size: 1em;
+	height: 45px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 7px;
+}
+
+.day-comp-line {
+	height: 0;
+	width: 100%;
+	border-bottom: 2px dotted $blue;
+	position: absolute;
+	bottom: 69px;
+}
+

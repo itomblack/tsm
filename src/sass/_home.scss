@@ -17,7 +17,7 @@ ul {
 
 
 body {
-  background-color: $grey
+  background-color: $back-grey;
 }
 
 
@@ -47,11 +47,6 @@ body, html {
 	@media screen and (max-width: $break2) { font-size: 11px; }
 
 
-}
-
-body {
-	padding: 24px;
-	 @media screen and (max-width: $break2) { padding: 24px 0px; }
 }
 
 h1, h2, h3, h4, p {
@@ -86,7 +81,102 @@ p {
  margin: 0;
 }
 
+div { position: relative;}
+
 .orange { color: $orange1; }
 .orange2 { color: $orange2; }
 .lighter { color: $ink2; }
 
+.strikethrough { text-decoration: line-through; }
+
+.inline-b { display: inline-block;}
+
+.mobile-only { display: none; }
+
+@media screen and (max-width: $break1) { 
+	.non-mobile { display: none; }
+	.mobile-only { display: block; }
+}
+
+@media screen and (max-width: $break2) { 
+	.hide-2 { display: none; }
+	.mobile-marg { margin-top: 7px; }
+}
+
+
+
+.top-nav {
+	width: 100%;
+	height: 120px;
+	background: url(../img/page/desktop-header.png) no-repeat;
+	background-size: 100;
+
+	@media screen and (max-width: $break2) {
+		height: 108px;
+		background: url(../img/page/mobile-header.png) no-repeat;
+		background-size: cover;
+	}
+}
+
+.side-filters { 
+	width: 288px;
+	height: 1228px;
+	position: absolute;
+	left: -3px;
+	top: 119px;
+	background: url(../img/page/filters.png) no-repeat center center;
+	@media screen and (max-width: $break2) { display: none;}
+}
+
+
+.central-content {
+	position: absolute;
+	left: 280px;
+	top: 120px;
+	width: calc(100% - 280px);
+	max-width: 800px;
+	padding: 24px;
+
+	@media screen and (max-width: $break1) {
+		left: 0;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+.sorting-wrap {
+	width: 100%;
+	height: 40px;
+	background: url(../img/page/sorting.png) no-repeat;
+	background-size: 100% 100%;
+
+	@media screen and (max-width: $break1) {
+		height: 108px;
+		background: url(../img/page/sorting-mob.png) no-repeat;
+	}
+}
+
+.mobile-margin { 
+	@media screen and (max-width: $break1) { margin: 0 12px;}
+}
+
+.headline-info {
+	h1 {
+		color: $ink;
+		font-weight: 300;
+		font-family: 'AkkuratLight';
+		font-size: 3em;
+	}
+
+	h2 {
+		color: $ink;
+		font-weight: 400;
+		font-size: 1.3em;
+
+		span { 
+			color: $blue;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+}

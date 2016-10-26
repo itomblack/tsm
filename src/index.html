@@ -6,9 +6,42 @@
 </head>
 <body>
 
-@@include('./build/1.html')
-@@include('./build/2.html')
-@@include('./build/3.html')
+<div class="top-nav"></div>
+<div class="side-filters non-mobile"></div>
+
+<div class="central-content">
+	<!-- titles of page -->
+	<div class="headline-info mobile-margin">
+		<h1>Fuerteventura</h1>
+		<h2>30 Oct - 10 Nov  <span>Change search</span></h2>
+		<h2 class="des-title">Prices from:</h2>
+	</div>
+	<!-- Days each side -->
+	<div class="des-all-wrap">
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		@@include('./inc/day-item.html')
+		<div class="day-comp-line"></div>
+	</div>
+
+
+
+
+
+
+	<!-- Sort row -->
+	<div class="sorting-wrap mobile-margin"></div>
+	<!-- Cards -->
+	<div class="cards-all-wrap">
+		@@include('./build/1.html')
+		@@include('./build/2.html')
+		@@include('./build/3.html')
+	</div>	
+</div>
 
 	
 
