@@ -893,7 +893,7 @@ div {
 .day-comp-line {
   height: 0;
   width: 100%;
-  border-bottom: 2px dashed #27A3D9;
+  border-bottom: 1px dashed #27A3D9;
   position: absolute;
   bottom: 69px; }
 
