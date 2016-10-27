@@ -27,6 +27,8 @@ var path = {
         destCss: 'dist/css/',
         img: 'src/img/**/*.*',
         destImg: 'dist/img/',
+        fonts: 'src/fonts/**/*.*',
+        destFonts: 'dist/fonts/',
         dest: 'dist/',
         handlebarsInc: 'src/inc-handlebars/card-handle.html',
 };
@@ -73,6 +75,11 @@ gulp.task( 'watch', function(done) {
 gulp.task('img', function(){
   gulp.src([path.img])
   .pipe(gulp.dest(path.destImg));
+});
+
+gulp.task('fonts', function(){
+  gulp.src([path.fonts])
+  .pipe(gulp.dest(path.destFonts));
 });
 
 gulp.task('html', function(){
@@ -127,5 +134,5 @@ if (require('./src/data/card-data.json')) {
 
 // default task
 gulp.task( 'default', function(cb){
-  gulpSequence(['clean'], ['handlebars'], ['img'],  ['js', 'sass'], ['html'], ['server', 'watch'] )(cb);
+  gulpSequence(['clean'], ['handlebars'], ['img'], ['fonts'],  ['js', 'sass'], ['html'], ['server', 'watch'] )(cb);
 });

@@ -434,20 +434,3 @@
 	}
 }
 
-.strikethrough { text-decoration: line-through; }
-
-.inline-b { display: inline-block;}
-
-.mobile-only { display: none; }
-
-@media screen and (max-width: $break1) { 
-	.non-mobile { display: none; }
-	.mobile-only { display: block; }
-}
-
-@media screen and (max-width: $break2) { 
-	.hide-2 { display: none; }
-	.mobile-marg { margin-top: 7px; }
-}
-
-

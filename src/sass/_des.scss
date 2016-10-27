@@ -2,7 +2,6 @@
 .des-title { margin-bottom: 0; }
 
 .des-all-wrap {
-	// background-color: white;
 	height: 125px;
 	margin-bottom: 1em;
 	display: flex;
@@ -10,7 +9,6 @@
 
 .day-item-wrap {
 	width: calc(100% / 7.1);
-	// display: inline-block;
 	flex-grow: 1;
 	text-align: center;
 	margin: 0 5px;
@@ -58,4 +56,19 @@
 	position: absolute;
 	bottom: 69px;
 }
+
+.day-item-background {
+	position: absolute;
+	bottom:0;
+	height: 45px;
+	width: 100%;
+}
+
+.js-selected-day {
+	.day-item-axis { background-color: white;}
+	.day-item-bar  { background-color: $blue;}
+	.day-item-background { box-shadow: 0 1px 4px rgba(0,0,0,.5)}
+}
+
+
 
