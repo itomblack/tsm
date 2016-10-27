@@ -75,6 +75,7 @@
 	border-bottom: 1px dashed $blue;
 	position: absolute;
 	bottom: 69px;
+	left: 0;
 }
 
 .day-item-background {
@@ -109,7 +110,7 @@
 				height: 6px;
 				background-color: $blue;
 				transform: rotate(45deg);
-				bottom: -3px;
+				bottom: -2px;
 
 			}
 		}
