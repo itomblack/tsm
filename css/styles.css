@@ -833,6 +833,7 @@ div {
 .des-all-wrap {
   height: 125px;
   margin-bottom: 1em;
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -870,7 +871,7 @@ div {
 .day-item-bar {
   font-weight: 600;
   font-size: 1.3em;
-  background-color: #CACCD9;
+  background-color: red;
   color: white;
   position: absolute;
   bottom: 45px;
