@@ -27,13 +27,6 @@ body {
 $marg: 16px;
 $marg2: 13px;
 
-//breakpoints
-$break1: 750px;
-$break2: 550px;
-// $break3: 420px;
-// $break3: 610px;
-// $break4: 350px;
-
 @media screen and (max-width: $break2) { 
  $marg: 10px;
 }
@@ -151,13 +144,12 @@ div { position: relative;}
 	background-size: 100% 100%;
 
 	@media screen and (max-width: $break1) {
-		height: 108px;
 		background: url(../img/page/sorting-mob.png) no-repeat;
 	}
 }
 
 .mobile-margin { 
-	@media screen and (max-width: $break1) { margin: 0 12px;}
+	@media screen and (max-width: $break1) { margin: 0 10px;}
 }
 
 .headline-info {

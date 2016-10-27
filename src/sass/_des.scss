@@ -5,6 +5,10 @@
 	height: 125px;
 	margin-bottom: 1em;
 	display: flex;
+	@media screen and (max-width: $break2) { 
+		margin: 12px 10px 10px 10px;
+		height: 100px;
+	}
 }
 
 .day-item-wrap {
@@ -36,6 +40,20 @@
 		position: absolute;
 		bottom: 2px;
 		width: 100%;
+	}
+
+	@media screen and (max-width: $break2) { 
+		bottom: 38px;
+
+		p {
+
+			top: -35px;
+			width: 60px;
+		    height: 0;
+		    overflow: hidden;
+		    background: $blue;
+		    left: calc(50% - 30px);
+		}
 	}	
 }
 
@@ -47,6 +65,8 @@
 	width: 100%;
 	bottom: 0;
 	padding-top: 7px;
+
+	@media screen and (max-width: $break2) { height:38px }
 }
 
 .day-comp-line {
@@ -62,6 +82,7 @@
 	bottom:0;
 	height: 45px;
 	width: 100%;
+	@media screen and (max-width: $break2) { height:38px }
 }
 
 .js-selected-day {
@@ -71,6 +92,27 @@
 	.day-axis-date, .day-axis-day {
 		font-weight: bold;
 		color: $blue;
+	}
+
+	@media screen and (max-width: $break2) { 
+		.day-item-bar p {
+			height: 28px;
+			padding: 5px;
+			overflow: visible;
+
+			&::after {
+				content: "";
+				display: block;
+				position: relative;
+				left: 22px;
+				width: 6px;
+				height: 6px;
+				background-color: $blue;
+				transform: rotate(45deg);
+				bottom: -3px;
+
+			}
+		}
 	}
 }
 
