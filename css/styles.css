@@ -249,7 +249,7 @@ body {
 
 @media screen and (max-width: 550px) { }
 
-/* line 41, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 34, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 body, html {
   font-family: 'AkkuratRegular', sans-serif;
   font-size: 13px;
@@ -261,11 +261,11 @@ body, html {
     body, html {
       font-size: 11px; } }
 
-/* line 52, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 45, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 h1, h2, h3, h4, p {
   font-family: 'AkkuratRegular', sans-serif; }
 
-/* line 56, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 49, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 h1 {
   font-size: 2.2em;
   line-height: 1em;
@@ -274,71 +274,71 @@ h1 {
     h1 {
       font-size: 2em; } }
 
-/* line 64, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 57, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 h2 {
   font-size: 1.3em;
   line-height: 1em; }
 
-/* line 69, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 62, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 h3 {
   font-size: 1.3em;
   line-height: 1em; }
 
-/* line 74, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 67, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 h4 {
   font-size: 1.2em;
   line-height: 1em; }
 
-/* line 79, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 72, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 p {
   font-size: 1em;
   margin: 0; }
 
-/* line 84, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 77, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 div {
   position: relative; }
 
-/* line 86, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 79, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .orange {
   color: #EE6000; }
 
-/* line 87, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 80, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .orange2 {
   color: #FA9550; }
 
-/* line 88, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 81, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .lighter {
   color: #5E5A6C; }
 
-/* line 90, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 83, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .strikethrough {
   text-decoration: line-through; }
 
-/* line 92, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 85, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .inline-b {
   display: inline-block; }
 
-/* line 94, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 87, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .mobile-only {
   display: none; }
 
 @media screen and (max-width: 750px) {
-  /* line 97, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 90, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .non-mobile {
     display: none; }
-  /* line 98, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 91, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .mobile-only {
     display: block; } }
 
 @media screen and (max-width: 550px) {
-  /* line 102, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 95, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .hide-2 {
     display: none; }
-  /* line 103, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 96, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .mobile-marg {
     margin-top: 7px; } }
 
-/* line 108, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 101, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .top-nav {
   width: 100%;
   height: 120px;
@@ -352,7 +352,7 @@ div {
       -webkit-background-size: cover;
       background-size: cover; } }
 
-/* line 121, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 114, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .side-filters {
   width: 288px;
   height: 1228px;
@@ -364,7 +364,7 @@ div {
     .side-filters {
       display: none; } }
 
-/* line 132, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 125, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .central-content {
   position: absolute;
   left: 280px;
@@ -379,7 +379,7 @@ div {
       width: 100%;
       padding: 0; } }
 
-/* line 147, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 140, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .sorting-wrap {
   width: 100%;
   height: 40px;
@@ -388,25 +388,24 @@ div {
   background-size: 100% 100%; }
   @media screen and (max-width: 750px) {
     .sorting-wrap {
-      height: 108px;
       background: url(../img/page/sorting-mob.png) no-repeat; } }
 
 @media screen and (max-width: 750px) {
   .mobile-margin {
-    margin: 0 12px; } }
+    margin: 0 10px; } }
 
-/* line 164, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 156, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .headline-info h1 {
   color: #201D31;
   font-weight: 300;
   font-family: 'AkkuratLight', 'AkkuratRegular', sans-serif;
   font-size: 3em; }
-/* line 171, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 163, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .headline-info h2 {
   color: #201D31;
   font-weight: 400;
   font-size: 1.3em; }
-  /* line 176, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 168, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .headline-info h2 span {
     color: #27A3D9;
     text-decoration: underline;
@@ -838,8 +837,12 @@ div {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 550px) {
+    .des-all-wrap {
+      margin: 12px 10px 10px 10px;
+      height: 100px; } }
 
-/* line 10, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 14, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-item-wrap {
   width: -webkit-calc(100% / 7.1);
   width: calc(100% / 7.1);
@@ -848,22 +851,22 @@ div {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: center;
-  margin: 0 5px;
+  margin: 0 8px;
   position: relative; }
-  /* line 16, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 20, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .day-item-wrap:first-of-type {
     margin-left: 0; }
-  /* line 17, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 21, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .day-item-wrap:nth-of-type(7) {
     margin-right: 0; }
-  /* line 20, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 24, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .day-item-wrap:hover .day-item-bar {
     background-color: #27A3D9; }
-  /* line 21, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 25, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .day-item-wrap:hover .day-item-axis {
     background-color: white; }
 
-/* line 25, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 29, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-item-bar {
   font-weight: 600;
   font-size: 1.3em;
@@ -873,13 +876,25 @@ div {
   bottom: 45px;
   width: 100%;
   min-height: 24px; }
-  /* line 35, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 39, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .day-item-bar p {
     position: absolute;
     bottom: 2px;
     width: 100%; }
+  @media screen and (max-width: 550px) {
+    .day-item-bar {
+      bottom: 38px; }
+      /* line 48, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+      .day-item-bar p {
+        top: -35px;
+        width: 60px;
+        height: 0;
+        overflow: hidden;
+        background: #27A3D9;
+        left: -webkit-calc(50% - 30px);
+        left: calc(50% - 30px); } }
 
-/* line 42, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 60, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-item-axis {
   font-weight: 300;
   font-size: 1em;
@@ -888,8 +903,11 @@ div {
   width: 100%;
   bottom: 0;
   padding-top: 7px; }
+  @media screen and (max-width: 550px) {
+    .day-item-axis {
+      height: 38px; } }
 
-/* line 52, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 72, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-comp-line {
   height: 0;
   width: 100%;
@@ -897,24 +915,46 @@ div {
   position: absolute;
   bottom: 69px; }
 
-/* line 60, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 80, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-item-background {
   position: absolute;
   bottom: 0;
   height: 45px;
   width: 100%; }
+  @media screen and (max-width: 550px) {
+    .day-item-background {
+      height: 38px; } }
 
-/* line 68, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 89, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-axis {
   background-color: white; }
-/* line 69, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 90, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-bar {
   background-color: #27A3D9; }
-/* line 70, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 91, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-background {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
-/* line 71, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 92, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-axis-date, .js-selected-day .day-axis-day {
   font-weight: bold;
   color: #27A3D9; }
+@media screen and (max-width: 550px) {
+  /* line 98, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  .js-selected-day .day-item-bar p {
+    height: 28px;
+    padding: 5px;
+    overflow: visible; }
+    /* line 103, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+    .js-selected-day .day-item-bar p::after {
+      content: "";
+      display: block;
+      position: relative;
+      left: 22px;
+      width: 6px;
+      height: 6px;
+      background-color: #27A3D9;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      bottom: -3px; } }
