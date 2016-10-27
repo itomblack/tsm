@@ -1,5 +1,5 @@
 
-.des-title { margin-bottom: 0; }
+.des-title { margin-bottom: 6px; }
 
 .des-all-wrap {
 	height: 125px;
@@ -67,7 +67,11 @@
 .js-selected-day {
 	.day-item-axis { background-color: white;}
 	.day-item-bar  { background-color: $blue;}
-	.day-item-background { box-shadow: 0 1px 4px rgba(0,0,0,.5)}
+	.day-item-background { box-shadow: 0 1px 4px rgba(0,0,0,.3)}
+	.day-axis-date, .day-axis-day {
+		font-weight: bold;
+		color: $blue;
+	}
 }
 
 

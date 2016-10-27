@@ -53,11 +53,13 @@ var desDay =  $('.day-axis-day');
 var desAxis =  $('.day-item-axis');
 var allPrices = [];
 var allBars = [];
+var allItemIDs = [];
 
 var minBarHeight = 24;
 var axisHeight = "";
 var maxHeight = "";
 var finalSelectedHeight = [];
+var currentDay = 3;
 
 for (var i = 0; i < desDayItem.length; i++) {
 	desDayItem[i].id = 'dayItem-' + desData[i].id;
@@ -71,14 +73,23 @@ for (var i = 0; i < desDayItem.length; i++) {
 	//get all prices in an array;
 	allPrices.push(desData[i].price);
 	allBars.push('day-' + desData[i].id);
+	allItemIDs.push(desDayItem[i]);
+
+	// //set click handlers for days
+	// $('.day-item-wrap').click( function(){
+	// 	swapDay(this);
+	// });
 }
+
+setClicks();
+
 
 //get max height from size of objects
 axisHeight = $('#axis-1').outerHeight();
 maxBarHeight = $('#dayItem-1').outerHeight() - axisHeight;
 
 //set selected as middle day
-$('#dayItem-3').toggleClass('js-selected-day');
+$( '#dayItem-' + currentDay ).toggleClass('js-selected-day');
 
 //set the values
 setValues();
@@ -136,8 +147,22 @@ function moveBar() {
 }
 
 
+function swapDay(event) {
+	var moveToNum = event.target.id.slice(-1);
+	$( '#dayItem-' + currentDay ).toggleClass('js-selected-day');
+	$( '#dayItem-' + moveToNum ).toggleClass('js-selected-day');
+	currentDay = moveToNum;
+	moveBar();
+}
 
-
+function setClicks() {
+	//set click handlers
+	for (var i = 0; i < desDayItem.length; i++) {
+		$(desDayItem[i]).click( function(event){
+			swapDay(event);
+		});
+	}
+}
 
 
 
