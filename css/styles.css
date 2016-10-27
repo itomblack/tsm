@@ -913,6 +913,7 @@ div {
   width: 100%;
   border-bottom: 1px dashed #27A3D9;
   position: absolute;
+  left: 0;
   bottom: 69px; }
 
 /* line 80, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
