@@ -11,7 +11,7 @@
 	width: calc(100% / 7.1);
 	flex-grow: 1;
 	text-align: center;
-	margin: 0 5px;
+	margin: 0 8px;
 	position: relative;
 	&:first-of-type { margin-left: 0; }
 	&:nth-of-type(7) { margin-right: 0; }
@@ -52,7 +52,7 @@
 .day-comp-line {
 	height: 0;
 	width: 100%;
-	border-bottom: 2px dotted $blue;
+	border-bottom: 1px dashed $blue;
 	position: absolute;
 	bottom: 69px;
 }
