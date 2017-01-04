@@ -198,6 +198,7 @@ if ($('#filter-demo').length > 0) {
 	//click event
 	$('.filter-wrap').click( function(event) {
 
+		var clickedObj = this;
 		var idClicked = this.id;
 
 		if( idClicked == 0 ) {
@@ -234,6 +235,10 @@ if ($('#filter-demo').length > 0) {
 			console.log('all');
 			setAll();
 		}
+
+		//show spinner
+		showSpinner(clickedObj);
+
 		//reset filters based on newarray
 		setFilters()
 
@@ -266,6 +271,23 @@ if ($('#filter-demo').length > 0) {
 				"selected",
 				"selected", 	
 			]
+	}
+
+	function showSpinner(clickedObj) {
+		//show spinner and hide price
+		$('.filter-price').each( function() {
+			$(this).addClass('js-opacity-00');
+		})
+		$(clickedObj).find('.inline-spinner').addClass('js-opacity-07');
+
+		//hide spinner and show price
+		setTimeout(function(){
+			$(clickedObj).find('.inline-spinner').removeClass('js-opacity-07');
+			$('.filter-price').each( function() {
+				$(this).removeClass('js-opacity-00');
+			})
+		}, 650);
+
 	}
 
 
