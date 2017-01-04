@@ -117,7 +117,8 @@ div { position: relative;}
 	position: absolute;
 	left: -3px;
 	top: 119px;
-	background: url(../img/page/filters.png) no-repeat center center;
+	// background: url(../img/page/filters.png) no-repeat center center;
+	background-color: white;
 	@media screen and (max-width: $break2) { display: none;}
 }
 
@@ -172,3 +173,117 @@ div { position: relative;}
 		}
 	}
 }
+
+
+
+//===============================================================================
+// FILTERS
+//===============================================================================
+.filter-sect-wrap {
+	min-height: 50px;
+    max-height: 50px;
+    border-bottom: 1px solid $lgrey;
+    overflow: hidden;
+
+    &.open {
+    	max-height: 500px;
+    	padding-bottom: 16px;
+    	overflow: visible;
+    }
+}
+
+.filter-section {
+	position: relative;
+	color: $ink;
+	width: 100%;
+    height: 50px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: bold;
+
+    &::after {
+    	content: "";
+    	display: block;
+    	position: absolute;
+    	right: 20px;
+    	top: 20px;
+    	width: 4px;
+    	height: 4px;
+    	border-top: 4px solid $ink;
+    	border-right: 4px solid $ink;
+    	border-bottom: 4px solid transparent;
+    	border-left: 4px solid transparent;
+    	transform: rotate(135deg);
+
+    }
+}
+
+
+.filter-wrap {
+	height: 34px;
+	width: 100%;
+	padding: 6px 20px;
+	cursor: pointer;
+
+	&:hover { background-color: #FFE9D3; }
+
+	p { 
+		position: absolute;
+		line-height: 34px;
+		left: 54px;
+   		top: 0;
+	}
+	
+	.filter-title { left: 54px; }
+	.filter-price { 
+		right: 20px;
+		text-align: right;
+		opacity: .5;
+	}
+
+	&.selected {
+		background-color: #FFE9D3;
+
+		svg {
+			fill: $orange1;
+			opacity: 1;
+		}
+	}
+
+	&.empty {
+		background-color: white;
+		svg { opacity: 0; }
+	}
+
+}
+
+.filter-box {
+	width: 22px;
+	height: 22px;
+	padding: 6px 0;
+	background-color: #F7F5F6;
+	border: 1px solid #CECECE;
+	display: inline-block;
+	position: relative;
+
+	svg {
+		width: 15px;
+		left: 3px;
+		top: 4px;
+		position: absolute;
+		color: $ink;
+		opacity: .1;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
