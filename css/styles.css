@@ -359,12 +359,12 @@ div {
   position: absolute;
   left: -3px;
   top: 119px;
-  background: url(../img/page/filters.png) no-repeat center center; }
+  background-color: white; }
   @media screen and (max-width: 550px) {
     .side-filters {
       display: none; } }
 
-/* line 125, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 126, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .central-content {
   position: absolute;
   left: 280px;
@@ -379,7 +379,7 @@ div {
       width: 100%;
       padding: 0; } }
 
-/* line 140, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 141, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .sorting-wrap {
   width: 100%;
   height: 40px;
@@ -394,22 +394,115 @@ div {
   .mobile-margin {
     margin: 0 10px; } }
 
-/* line 156, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 157, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .headline-info h1 {
   color: #201D31;
   font-weight: 300;
   font-family: 'AkkuratLight', 'AkkuratRegular', sans-serif;
   font-size: 3em; }
-/* line 163, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 164, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .headline-info h2 {
   color: #201D31;
   font-weight: 400;
   font-size: 1.3em; }
-  /* line 168, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 169, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .headline-info h2 span {
     color: #27A3D9;
     text-decoration: underline;
     cursor: pointer; }
+
+/* line 182, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.filter-sect-wrap {
+  min-height: 50px;
+  max-height: 50px;
+  border-bottom: 1px solid #E2E2E2;
+  overflow: hidden; }
+  /* line 188, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-sect-wrap.open {
+    max-height: 500px;
+    padding-bottom: 16px;
+    overflow: visible; }
+
+/* line 195, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.filter-section {
+  position: relative;
+  color: #201D31;
+  width: 100%;
+  height: 50px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: bold; }
+  /* line 204, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 4px;
+    height: 4px;
+    border-top: 4px solid #201D31;
+    border-right: 4px solid #201D31;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg); }
+
+/* line 222, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.filter-wrap {
+  height: 34px;
+  width: 100%;
+  padding: 6px 20px;
+  cursor: pointer; }
+  /* line 228, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap:hover {
+    background-color: #FFE9D3; }
+  /* line 230, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap p {
+    position: absolute;
+    line-height: 34px;
+    left: 54px;
+    top: 0; }
+  /* line 237, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap .filter-title {
+    left: 54px; }
+  /* line 238, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap .filter-price {
+    right: 20px;
+    text-align: right;
+    opacity: 0.5; }
+  /* line 244, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap.selected {
+    background-color: #FFE9D3; }
+    /* line 247, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .filter-wrap.selected svg {
+      fill: #EE6000;
+      opacity: 1; }
+  /* line 253, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-wrap.empty {
+    background-color: white; }
+    /* line 255, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    .filter-wrap.empty svg {
+      opacity: 0; }
+
+/* line 260, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.filter-box {
+  width: 22px;
+  height: 22px;
+  padding: 6px 0;
+  background-color: #F7F5F6;
+  border: 1px solid #CECECE;
+  display: inline-block;
+  position: relative; }
+  /* line 269, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .filter-box svg {
+    width: 15px;
+    left: 3px;
+    top: 4px;
+    position: absolute;
+    color: #201D31;
+    opacity: 0.1; }
 
 /* line 2, /Users/ianblack/Repos/tsm/src/sass/_cards.scss */
 .btn, .btn-2 {
@@ -913,10 +1006,10 @@ div {
   width: 100%;
   border-bottom: 1px dashed #27A3D9;
   position: absolute;
-  left: 0;
-  bottom: 69px; }
+  bottom: 69px;
+  left: 0; }
 
-/* line 80, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 81, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .day-item-background {
   position: absolute;
   bottom: 0;
@@ -926,27 +1019,27 @@ div {
     .day-item-background {
       height: 38px; } }
 
-/* line 89, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 90, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-axis {
   background-color: white; }
-/* line 90, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 91, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-bar {
   background-color: #27A3D9; }
-/* line 91, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 92, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-item-background {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
-/* line 92, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+/* line 93, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
 .js-selected-day .day-axis-date, .js-selected-day .day-axis-day {
   font-weight: bold;
   color: #27A3D9; }
 @media screen and (max-width: 550px) {
-  /* line 98, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+  /* line 99, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
   .js-selected-day .day-item-bar p {
     height: 28px;
     padding: 5px;
     overflow: visible; }
-    /* line 103, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
+    /* line 104, /Users/ianblack/Repos/tsm/src/sass/_des.scss */
     .js-selected-day .day-item-bar p::after {
       content: "";
       display: block;
