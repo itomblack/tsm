@@ -1,9 +1,15 @@
-<div id="filter-demo" class="">
-	<div class="filter-sect-wrap open">
+<div id="filter-demo" class="">	
+	<!-- filters -->
+	<div class="filter-sect-wrap">
+		<div class="filter-section">
+			<span>Price</span>
+		</div>
+	</div>
+
+	<div id="open-filter" class="filter-sect-wrap">
 		<div class="filter-section">
 			<span>Board Basis</span>
 		</div>
-
 		<div id="0" class="filter-wrap">
 			<div class="filter-box">
 				@@include('./tick.html')
@@ -48,7 +54,6 @@
 			<p class="filter-price">From £300</p>
 			<div class="inline-spinner"></div>
 		</div>
-
 	</div>
 
 	<div class="filter-sect-wrap">
@@ -56,4 +61,26 @@
 			<span>Stars</span>
 		</div>
 	</div>
+
+	<div class="filter-sect-wrap">
+		<div class="filter-section">
+			<span>Guest Rating</span>
+		</div>
+	</div>
+
+	<div class="filter-sect-wrap">
+		<div class="filter-section">
+			<span>Resorts</span>
+		</div>
+	</div>
 </div>
+
+<!-- filter button -->
+<button class="btn-more">
+	<p class="icon">+</p>
+	<p>Show More Filters</p>
+</button>
+
+<!-- filter loader cover -->
+<div class="filter-spinner-wrap"></div>
+

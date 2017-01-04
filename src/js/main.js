@@ -183,6 +183,17 @@ $( document ).ready(function() {
 //===============================================================================
 if ($('#filter-demo').length > 0) {
 
+
+	//after a few seconds, show the filters
+	setTimeout(function(){
+		$('.filter-spinner-wrap').hide();
+		$('#open-filter').addClass('open');
+	}, 3500);
+
+
+
+
+	//set initial board basis filter states
 	var filterSet = [
 		"selected",
 		"",
@@ -232,7 +243,6 @@ if ($('#filter-demo').length > 0) {
 
 		//if all emprty, put back all filter
 		if (filterSet[0] == "empty" && filterSet[1] == "empty" && filterSet[2] == "empty" && filterSet[3] == "empty" && filterSet[4] == "empty") {
-			console.log('all');
 			setAll();
 		}
 
@@ -286,7 +296,7 @@ if ($('#filter-demo').length > 0) {
 			$('.filter-price').each( function() {
 				$(this).removeClass('js-opacity-00');
 			})
-		}, 650);
+		}, 550);
 
 	}
 
