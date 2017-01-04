@@ -183,6 +183,17 @@ $( document ).ready(function() {
 //===============================================================================
 if ($('#filter-demo').length > 0) {
 
+
+	//after a few seconds, show the filters
+	setTimeout(function(){
+		$('.filter-spinner-wrap').hide();
+		$('#open-filter').addClass('open');
+	}, 3500);
+
+
+
+
+	//set initial board basis filter states
 	var filterSet = [
 		"selected",
 		"",
@@ -198,6 +209,7 @@ if ($('#filter-demo').length > 0) {
 	//click event
 	$('.filter-wrap').click( function(event) {
 
+		var clickedObj = this;
 		var idClicked = this.id;
 
 		if( idClicked == 0 ) {
@@ -231,9 +243,12 @@ if ($('#filter-demo').length > 0) {
 
 		//if all emprty, put back all filter
 		if (filterSet[0] == "empty" && filterSet[1] == "empty" && filterSet[2] == "empty" && filterSet[3] == "empty" && filterSet[4] == "empty") {
-			console.log('all');
 			setAll();
 		}
+
+		//show spinner
+		showSpinner(clickedObj);
+
 		//reset filters based on newarray
 		setFilters()
 
@@ -266,6 +281,23 @@ if ($('#filter-demo').length > 0) {
 				"selected",
 				"selected", 	
 			]
+	}
+
+	function showSpinner(clickedObj) {
+		//show spinner and hide price
+		$('.filter-price').each( function() {
+			$(this).addClass('js-opacity-00');
+		})
+		$(clickedObj).find('.inline-spinner').addClass('js-opacity-07');
+
+		//hide spinner and show price
+		setTimeout(function(){
+			$(clickedObj).find('.inline-spinner').removeClass('js-opacity-07');
+			$('.filter-price').each( function() {
+				$(this).removeClass('js-opacity-00');
+			})
+		}, 550);
+
 	}
 
 
