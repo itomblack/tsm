@@ -293,12 +293,15 @@ if ($('#filter-demo').length > 0) {
 		})
 		$(clickedObj).find('.inline-spinner').addClass('js-opacity-07');
 
+		$('#card-cover').addClass('js-opacity-07');
+
 		//hide spinner and show price
 		setTimeout(function(){
 			$(clickedObj).find('.inline-spinner').removeClass('js-opacity-07');
 			$('.filter-price').each( function() {
 				$(this).removeClass('js-opacity-00');
 			})
+			$('#card-cover').removeClass('js-opacity-07');
 		}, 550);
 
 	}

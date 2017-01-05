@@ -427,7 +427,34 @@ div {
   width: 100%;
   margin-bottom: 30px; }
 
-/* line 199, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 195, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+.card-cover {
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease; }
+  /* line 204, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  .card-cover::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #E2E2E2;
+    border-bottom: 3px solid #EE6000;
+    border-radius: 100%;
+    right: -webkit-calc(50% - 20px);
+    right: calc(50% - 20px);
+    top: 115px;
+    -webkit-animation: spinner 0.7s linear infinite;
+    animation: spinner 0.7s linear infinite;
+    -webkit-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease; }
+
+/* line 223, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .filter-spinner-wrap {
   width: 100%;
   height: 260px;
@@ -437,7 +464,7 @@ div {
   background-color: white;
   opacity: 0.5;
   cursor: not-allowed; }
-  /* line 209, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 233, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-spinner-wrap::after {
     content: "";
     position: absolute;
@@ -454,7 +481,7 @@ div {
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease; }
 
-/* line 225, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 249, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .filter-sect-wrap {
   min-height: 50px;
   max-height: 50px;
@@ -462,13 +489,13 @@ div {
   transition: max-height 0.5s;
   border-bottom: 1px solid #E2E2E2;
   overflow: hidden; }
-  /* line 232, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 256, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-sect-wrap.open {
     max-height: 500px;
     padding-bottom: 16px;
     overflow: visible; }
 
-/* line 239, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 263, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .filter-section {
   position: relative;
   color: #201D31;
@@ -477,7 +504,7 @@ div {
   padding: 16px;
   font-size: 14px;
   font-weight: bold; }
-  /* line 248, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 272, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-section::after {
     content: "";
     display: block;
@@ -493,53 +520,53 @@ div {
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg); }
-  /* line 265, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 289, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .open .filter-section::after {
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 24px; }
 
-/* line 273, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 297, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .filter-wrap {
   height: 34px;
   width: 100%;
   padding: 6px 20px;
   cursor: pointer; }
-  /* line 279, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 303, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap:hover {
     background-color: #FFE9D3; }
-  /* line 281, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 305, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap p {
     position: absolute;
     line-height: 34px;
     left: 54px;
     top: 0; }
-  /* line 288, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 312, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap .filter-title {
     left: 54px; }
-  /* line 289, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 313, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap .filter-price {
     right: 20px;
     text-align: right;
     opacity: 0.5;
     -webkit-transition: opacity 0.1s ease;
     transition: opacity 0.1s ease; }
-  /* line 296, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 320, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap.selected {
     background-color: #FFE9D3; }
-    /* line 299, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    /* line 323, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
     .filter-wrap.selected svg {
       fill: #EE6000;
       opacity: 1; }
-  /* line 305, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 329, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-wrap.empty {
     background-color: white; }
-    /* line 307, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+    /* line 331, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
     .filter-wrap.empty svg {
       opacity: 0; }
 
-/* line 312, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 336, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .filter-box {
   width: 22px;
   height: 22px;
@@ -548,7 +575,7 @@ div {
   border: 1px solid #CECECE;
   display: inline-block;
   position: relative; }
-  /* line 321, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 345, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .filter-box svg {
     width: 15px;
     left: 3px;
@@ -557,7 +584,7 @@ div {
     color: #201D31;
     opacity: 0.1; }
 
-/* line 333, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 357, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .inline-spinner {
   position: absolute;
   width: 22px;
@@ -573,7 +600,7 @@ div {
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease; }
 
-/* line 348, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 372, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .btn-more {
   padding: 16px;
   width: -webkit-calc(100% - 40px);
@@ -583,45 +610,45 @@ div {
   background-color: white;
   display: block;
   margin: 20px auto; }
-  /* line 357, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 381, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .btn-more p {
     display: inline;
     line-height: 24px;
     font-size: 14px; }
-  /* line 363, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 387, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .btn-more .icon {
     font-weight: bold;
     font-size: 20px; }
-  /* line 368, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 392, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   .btn-more:hover {
     color: #27A3D9;
     border: 1px solid #27A3D9; }
 
 @-webkit-keyframes spinner {
-  /* line 375, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 399, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 @keyframes spinner {
-  /* line 375, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+  /* line 399, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
-/* line 378, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 402, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .js-opacity-00 {
   opacity: 0 !important; }
 
-/* line 379, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 403, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .js-opacity-05 {
   opacity: 0.5 !important; }
 
-/* line 380, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 404, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .js-opacity-07 {
   opacity: 0.7 !important; }
 
-/* line 381, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
+/* line 405, /Users/ianblack/Repos/tsm/src/sass/_home.scss */
 .js-opacity-10 {
   opacity: 1 !important; }
 
