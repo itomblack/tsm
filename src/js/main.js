@@ -188,6 +188,9 @@ if ($('#filter-demo').length > 0) {
 	setTimeout(function(){
 		$('.filter-spinner-wrap').hide();
 		$('#open-filter').addClass('open');
+		//show DES
+		$('#loader-img').hide();
+		$('#des').show();
 	}, 3500);
 
 
